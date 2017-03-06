@@ -1,0 +1,269 @@
+{  
+   "userId":"fredL",
+   "internalId":1000,
+   "userLastname":"lefevre",
+   "userFirstName":"frederic",
+   "title": "Developer",
+   "partnerName":"IBM Nice",
+   "partnerDescription": "An agile start-up located in Nice",
+   "address":{  
+      "streetInformation":"21, Av simone Veil",
+      "city":"Nice",
+      "zipCode":"06000",
+      "state":"PACA",
+      "country":"france"
+   },
+   "phone":"+33677020131",
+   "email":"frederic.levefre@fr.ibm.com",
+   "specialityDomains":[  
+      "construction",
+      "beton arme",
+      "top",
+      "amazing",
+      "expensive"
+   ],
+   "businessType":[  
+      {  
+         "name":"Maintenance Service Provider",
+         "id": 7011
+      },
+      {
+         "name": "Software Vendor",
+         "id": 7004
+      }
+   ],
+   "industries":[  
+      {  
+         "name":"Telecommunications",
+         "id":9001
+      },
+      {  
+         "name":"Travel & Transportation",
+         "id": 9016
+      },
+      {  
+         "name":"Healthcare",
+         "id":9011
+      },
+      {  
+         "name": "Industrial Sector",
+         "id":9012
+      }
+   ],
+   "location":{  
+      "latitude":43.681509,
+      "longitude":7.203652,
+      "altitude":0,
+      "timeStamp":1486048497331
+
+   },
+   "shareEmail":true,
+   "sharePhone":true,
+   "nbPublishedSearches":0,
+   "nbOpportunities":0,
+   "photoUrl":"",
+   "url":"http://www.ibm.com"
+}
+
+
+
+{  
+   "userId":"JoelR",
+   "internalId":1001,
+   "userLastname":"rongiard",
+   "userFirstName":"joel",
+   "title": "CEO",
+   "partnerName":"IBM Nice",
+   "partnerDescription": "An agile start-up located in Nice",
+   "address":{  
+      "streetInformation":"21, Av simone Veil",
+      "city":"Nice",
+      "zipCode":"06000",
+      "state":"PACA",
+      "country":"france"
+   },
+   "phone":"+33607619328",
+   "email":"rongiard@fr.ibm.com",
+   "specialityDomains":[  
+      "carrelage",
+      "climatisation",
+      "la gaude",
+      "suy blanc"
+   ],
+   "businessType":[  
+      {  
+         "name":"Maintenance Service Provider",
+         "id": 7011
+      }
+   ],
+   "industries":[  
+      {  
+         "name":"Telecommunications",
+         "id":9001
+      },
+      {  
+         "name":"Travel & Transportation",
+         "id": 9016
+      },
+      {  
+         "name":"Healthcare",
+         "id":9011
+      },
+      {  
+         "name":"Media & Entertainment",
+         "id": 9015
+      },
+      {  
+         "name": "Life Sciences",
+         "id":9014
+      },
+      {  
+         "name": "Insurance",
+         "id":9013
+      },
+      {  
+         "name": "Insurance",
+         "id":9012
+      },
+      {  
+         "name": "Energy & Utilities",
+         "id":9010
+      },
+      {  
+         "name": "Electronics",
+         "id":9009
+      },
+      {  
+         "name": "Education",
+         "id":9008
+      },
+      {  
+         "name": "Chemical & Petroleum",
+         "id":9007
+      },
+      {  
+         "name": "Banking & Financial Markets",
+         "id":9006
+      }
+   ],
+   "location":{  
+      "latitude":43.681509,
+      "longitude":7.203652,
+      "altitude":0,
+      "timeStamp":1486048497331
+
+   },
+   "shareEmail":true,
+   "sharePhone":true,
+   "nbPublishedSearches":0,
+   "nbOpportunities":0,
+   "photoUrl":"",
+   "url":"http://www.ibm.com"
+}
+
+
+
+{  
+   "userId":"Zsolt",
+   "internalId":1002,
+   "userLastname":"Zalai",
+   "userFirstName":"Zsolt",
+   "title": "Project Manager",
+   "partnerName":"IBM Nice",
+   "partnerDescription": "An agile start-up located in Nice",
+   "address":{  
+      "streetInformation":"21, Av simone Veil",
+      "city":"Nice",
+      "zipCode":"06000",
+      "state":"PACA",
+      "country":"france"
+   },
+   "phone":"+33 685945671",
+   "email":"szalai@fr.ibm.com",
+   "specialityDomains":[  
+      "india",
+      "South Asia",
+      "senior architect",
+      "quality"
+   ],
+   "businessType":[  
+      {  
+         "name":"Hardware Vendor",
+         "id": 7008
+      }
+   ],
+   "industries":[  
+      {  
+         "name":"Telecommunications",
+         "id":9001
+      },
+      {  
+         "name":"Aerospace",
+         "id": 9004
+      },
+      {  
+         "name":"Electronics",
+         "id":9009
+      }
+   ],
+   "location":{  
+      "latitude":43.681509,
+      "longitude":7.203652,
+      "altitude":0,
+      "timeStamp":1486048497331
+
+   },
+   "shareEmail":true,
+   "sharePhone":true,
+   "nbPublishedSearches":0,
+   "nbOpportunities":0,
+   "photoUrl":"",
+   "url":"http://www.ibm.com"
+}
+
+
+
+{  
+   "userId":"AndyW",
+   "internalId":1003,
+   "userLastname":"Warren",
+   "userFirstName":"Andy",
+   "title": "CTO",
+   "partnerName":"Microsoft",
+   "partnerDescription": "IT Company that does a lot of IT related stuff, this description might not be very clear but at least that makes a long description and that'll help us handle the UI",
+   "address":{  
+      "streetInformation":"4521, Obahma Road",
+      "city":"San Francisco",
+      "zipCode":"12001",
+      "state":"California",
+      "country":"USA"
+   },
+   "phone":"(415) 972-6400",
+   "email":"andy.warren@microsoft.com",
+   "specialityDomains":[  
+      "Software",
+      "EMEA",
+      "top Sales"
+   ],
+   "businessType":[  
+      {  
+         "name":"Software Support Provider",
+         "id": 7010
+      }
+   ],
+   "industries":[  
+      {  
+         "name":"Life Sciences",
+         "id": 9014
+      }
+   ],
+   "location":{  
+
+   },
+   "shareEmail":true,
+   "sharePhone":true,
+   "nbPublishedSearches":0,
+   "nbOpportunities":0,
+   "photoUrl":"",
+   "url":"http://www.ibm.com"
+}

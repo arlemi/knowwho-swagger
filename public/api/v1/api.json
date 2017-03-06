@@ -1,0 +1,240 @@
+{
+   "swagger": "2.0",
+   "info": {
+      "version": "0.1.4",
+      "title": "TechFinder",
+      "description": "Swagger for the backend API of the TechFinder project",
+      "contact": {
+         "email": "arlemi.turpault1@fr.ibm.com"
+      }
+   },
+   "host": "knowwho-swagger.mybluemix.net",
+   "basePath": "/p2pApp",
+   "tags": [
+      {
+         "name": "Lists",
+         "description": "Standard lists API"
+      },
+      {
+         "name": "Users",
+         "description": "User related API"
+      },
+      {
+         "name": "Search",
+         "description": "Search related API"
+      },
+      {
+         "name": "Opportunity",
+         "description": "Opportunity related API"
+      }
+   ],
+   "schemes": [
+      "http",
+      "https"
+   ],
+   "consumes": [
+      "application/json"
+   ],
+   "produces": [
+      "application/json"
+   ],
+   "paths": {
+      "/v1/industries": {
+         "x-swagger-router-controller": "/industries",
+         "get": {
+            "tags": [
+               "Lists"
+            ],
+            "description": "Obtains the standard list of industries",
+            "operationId": "industries",
+            "responses": {
+               "200": {
+                  "description": "Success",
+                  "schema": {
+                     "$ref": "#/definitions/StandardListIndustriesResponse"
+                  }
+               },
+               "default": {
+                  "description": "Error",
+                  "schema": {
+                     "$ref": "#/definitions/ErrorResponse"
+                  }
+               }
+            }
+         }
+      },
+      "/v1/businessTypes": {
+         "x-swagger-route-controller": "/businessTypes",
+         "get": {
+            "tags": [
+               "Lists"
+            ],
+            "description": "Obtain the standard list of speciality domains",
+            "operationId": "business_types",
+            "responses": {
+               "200": {
+                  "description": "Success",
+                  "schema": {
+                     "$ref": "#/definitions/StandardListBusinessTypesResponse"
+                  }
+               },
+               "default": {
+                  "description": "Error",
+                  "schema": {
+                     "$ref": "#/definitions/ErrorResponse"
+                  }
+               }
+            }
+         }
+      },
+      "/v1/specialityDomains/typeAhead": {
+         "x-swagger-route-controller": "/specialityDomains",
+         "get": {
+            "tags": [
+               "Lists"
+            ],
+            "description": "Obtain the standard list of speciality domains",
+            "operationId": "speciality_domains",
+            "parameters": [
+               {
+                  "name": "q",
+                  "in": "query",
+                  "description": "a string typed by the user",
+                  "required": false,
+                  "type": "string"
+               },
+               {
+                  "name": "limit",
+                  "in": "query",
+                  "description": "maximum number of results returned",
+                  "required": true,
+                  "type": "integer"
+               }
+            ],
+            "responses": {
+               "200": {
+                  "description": "Success",
+                  "schema": {
+                     "$ref": "#/definitions/StandardListSpecialityDomainsResponse"
+                  }
+               },
+               "default": {
+                  "description": "Error",
+                  "schema": {
+                     "$ref": "#/definitions/ErrorResponse"
+                  }
+               }
+            }
+         }
+      },
+      "/swagger": {
+         "x-swagger-pipe": "swagger_raw"
+      }
+   },
+   "definitions": {
+      "StandardListIndustriesResponse": {
+         "required": [
+            "operation",
+            "data"
+         ],
+         "properties": {
+            "operation": {
+               "type": "string"
+            },
+            "data": {
+               "type": "array",
+               "items": {
+                  "type": "object",
+                  "description": "industries list",
+                  "allOf": [
+                     {
+                        "$ref": "#/definitions/ListIndustriesOrBusinessTypes"
+                     }
+                  ]
+               }
+            }
+         }
+      },
+      "StandardListSpecialityDomainsResponse": {
+         "required": [
+            "operation",
+            "data"
+         ],
+         "properties": {
+            "operation": {
+               "type": "string"
+            },
+            "data": {
+               "type": "array",
+               "items": {
+                  "type": "string"
+               }
+            }
+         }
+      },
+      "StandardListBusinessTypesResponse": {
+         "required": [
+            "operation",
+            "data"
+         ],
+         "properties": {
+            "operation": {
+               "type": "string"
+            },
+            "data": {
+               "type": "array",
+               "items": {
+                  "type": "object",
+                  "description": "industries list",
+                  "allOf": [
+                     {
+                        "$ref": "#/definitions/ListIndustriesOrBusinessTypes"
+                     }
+                  ]
+               }
+            }
+         }
+      },
+      "ErrorResponse": {
+         "required": [
+            "operation",
+            "error"
+         ],
+         "properties": {
+            "operation": {
+               "type": "string"
+            },
+            "error": {
+               "type": "object",
+               "properties": {
+                  "code": {
+                     "type": "integer"
+                  },
+                  "failureReason": {
+                     "type": "string"
+                  }
+               }
+            }
+         }
+      },
+      "ListIndustriesOrBusinessTypes": {
+         "type": "object",
+         "required": [
+            "name",
+            "id",
+            "scoring"
+         ],
+         "properties": {
+            "name": {
+               "type": "string"
+            },
+            "id": {
+               "type": "integer"
+            },
+            "scoring": {
+               "type": "integer"
+            }
+         }
+      }
+   }
+}
